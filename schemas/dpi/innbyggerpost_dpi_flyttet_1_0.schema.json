@@ -3,11 +3,13 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "En digital post med tilhørende Dokumentpakke som flyttes fra en postkasseleverandør til en annen",
     "$comment": "Denne meldingstypen brukes kun imellom Postkasseleverandørene og ikke av Avsender. Den brukes dersom Innbygger velger å flytte sin post over til en annen postkasseleverandør.",
+    "javaInterfaces" : ["no.digdir.dpi.domain.Kvittering10Schema"],
     "definitions": {
         "standardBusinessDocument": {
             "type": "object",
             "additionalProperties": false,
             "title": "standardBusinessDocument",
+            "javaName": "FlytteDigitalPostSBD",
             "properties": {
                 "standardBusinessDocumentHeader": {
                     "$ref": "https://docs.digdir.no/schemas/common/sbdh.schema.json#/definitions/standardBusinessDocumentHeader"
