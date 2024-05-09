@@ -3,11 +3,13 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "En Kvitteringsmelding fra Utskriftstjenesten til Avsender om at post ikke kunne leveres til Mottaker.",
     "$comment": "Dette er Kvittering på at posten har kommet i retur og har blitt makulert.",
+    "javaInterfaces" : ["no.digdir.dpi.domain.Kvittering10Schema"],
     "definitions": {
         "standardBusinessDocument": {
             "type": "object",
             "additionalProperties": false,
             "title": "standardBusinessDocument",
+            "javaName": "ReturpostKvitteringSBD",
             "properties": {
                 "standardBusinessDocumentHeader": {
                     "$ref": "https://docs.digdir.no/schemas/common/sbdh.schema.json#/definitions/standardBusinessDocumentHeader"
